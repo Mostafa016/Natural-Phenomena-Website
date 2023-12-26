@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Login</title>
+    <link href="login-register-style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+
+     <!-----------------background video------------->
+<section class="header" id="section-header">
+    <div class="background-video">
+         <video autoplay loop class="video-background" muted plays-inline> 
+        <source src="../loop.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+    <!-----------------background video------------->
+
+    <form onsubmit="return validLogin()"> 
+
+      <div class="formElements">
+
+        <h1>Login</h1>
+
+        <label for = "email" id = "emailLabel"><b>E-mail</b></label> <br>
+        <input type = "text" id = "email" name = "email" placeholder = "example@yahoo.com" onblur = "validEmail()">
+        <span id = "emailError" class = "error" style="display: none;">E-mail format: example@yahoo.com</span>
+        <br> 
+
+        <label for = "loginPassword" id = "passwordLabel"><b>Password</b></label><br>
+        <input type = "password" id = "password" name = "password" placeholder = "***************" onblur ="validPassword()">
+        <span id = "passwordError" class = "error" style="display: none;">The password should be at least 4 characters long and have at least one: lowercase letter, uppercase letter, digit, and special character.</span>
+        <br> <br>
+
+        <label for = "user">User</label>
+        <input type = "radio" id = "user" name = "userType" value = "user" checked = "true">
+        <label for = "admin">Admin</label>
+        <input type = "radio" id = "admin" name = "userType" value = "admin">
+        <br>
+
+        <input type="checkbox">
+        <label class="remember-agree">Remember Me </label>
+
+        <button type="submit" class="button" >Login</button>
+
+        <p>Don't have an account?<br><br> <a href = "Register.html">
+          <label >Register here.</label></a></p>
+
+        </div>
+
+        </form>
+
+    <script src="login-register-script.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,678 @@
+								/***** General *****/
+
+*
+{
+	box-sizing:border-box;
+}
+
+						/******* the video background *******/
+
+
+.background-video
+{
+    position: fixed; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.video-background
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+								/****** Body ******/
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+							/******** Paragraph ********/
+
+p 
+{
+	margin: 0;
+	padding: 1em 0;
+	font-size: 20px;
+}
+						/******    Heading 2      ******/ 
+h2
+  {
+    margin: 0;
+    padding: 1em 0;
+  }
+
+		/******************************************************************/
+
+
+						/******* Navigation bar *******/
+#section-header
+{
+	overflow: hidden;
+	width: 100%;
+	height: 472px;
+	position:relative;
+	
+}
+
+
+.nav-bar
+{
+	position: relative;
+	padding-top: 5px;
+	float: right;
+	margin-top: 10px;
+	margin-right:10px;
+	font-size: 17px;
+	animation: movingnav 1.2s ease-in-out 0.5s 1 normal backwards;
+}
+
+section header div a.nav
+{
+	cursor: default;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.44);
+  padding: 12px 20px;
+  font-weight: 600;
+  border-radius: 100px;
+  border: 1px solid #666;
+  margin: 0.5em 0;
+  transition: all 0.2s ease-out;
+}
+.nav:hover
+{
+	background: rgba(0, 0, 0, 0.88);
+	transform: scale(1.1);
+}
+
+.arrow-content-div
+{
+	width: 105px;
+	height: 49px;
+	border-radius: 23px;
+	font-size: 14px;
+	color: rgba(255,255,255,1);
+	position: relative;
+	left: 204px;
+	top: -9px;
+	display: inline-block;
+	z-index: -100;
+	
+}
+.arrow-content
+{
+	font-size: 10px;
+	position: relative;
+	top: 26px;
+	text-align: center;
+}
+
+						/*******     the logo       *******/
+.logo
+{
+    margin-top: 60px;
+    height: 170px;
+    width: 200px;
+    float: left;
+ 
+}
+
+		/*********************************************************************/
+
+
+				/***************The content bar*****************/
+
+.space
+{
+	width: 105px;
+	height: 38px;
+	position: relative;
+	top: -38px;
+	left: 76px;
+	z-index: 99;
+}
+.arrowdiv
+{
+	height: 35px;
+	width: 35px;
+	background-color: rgba(0,0,0,0.88);
+	border-radius: 20px;
+	position: absolute;
+	left: 110px;
+	top: -37px;
+	z-index: -99;
+	overflow: hidden;
+	text-align: center;
+}
+.arrow
+{
+	cursor: default;
+	font-weight: 900;
+	color: rgba(255,255,255,0.66);
+	font-size: 22px;
+}
+.contentList
+{
+	background-color: rgba(0,0,0,0.44);
+	width: 260px;
+	height: 353px; 	
+	border-radius: 24px;
+	position: relative;
+	top: 33px;
+	left: 18px;
+	display: none;
+	animation: allContentList 0.8s ease-in-out 0s 1 normal backwards;
+	z-index: 10;
+}
+
+.contentList a
+{
+	cursor: default;
+	color: white;
+	background-color: rgba(0,0,0,0.88);
+	font-size: 19px;
+	width: 260px;
+	display: block;	
+	line-height: 27px;
+	text-decoration: none;
+	transition: transform 0.8s ease;
+	padding: 12px 4px;
+	font-weight: 600;
+	border-radius: 100px;
+	margin: 0.5em 0;
+	text-align: center;
+
+}
+.l1
+{
+	position: absolute;
+	top: -10px;
+	animation: contentlist 0.6s ease-in-out 0s 1 backwards; 
+}
+.l2
+{
+	position: absolute;
+	top: 51.1px;
+	animation: contentlist 0.65s ease-in-out 0.05s 1 backwards; 
+}
+.l3
+{
+	position: absolute;
+	top: 111.2px;
+	animation: contentlist 0.7s ease-in-out 0.11s 1 backwards; 
+}
+.l4
+{
+	position: absolute;
+	top: 171.4px;
+	animation: contentlist 0.75s ease-in-out 0.18s 1 backwards;
+}
+.l5
+{
+	position: absolute;
+	top: 231.8px;
+	animation: contentlist 0.8s ease-in-out 0.26s 1 backwards; 
+}
+.l6
+{
+	position: absolute;
+	top: 292px;
+	animation: contentlist 0.85s ease-in-out 0.35s 1 backwards;
+}
+
+
+.contentList a:hover
+{
+	transform: scale(1.14);
+}
+
+
+		/******************************************************************/
+
+
+							/*******The page title*******/
+.titleSection
+{
+	position: relative;
+	top: -205px;
+	text-align: center;
+}
+
+.Title
+{
+	font-size: 30px;    
+  	text-align-last: center;
+	position: relative;
+	z-index: -1;
+}
+.N, .P 
+{
+  	color: rgb(255, 0, 0);
+  	font-size: 80px;
+  	font-style: italic;
+  	font-family: arial;
+}
+.text-under-title p
+{
+	text-align: center;
+}
+
+		/******************************************************************/
+				
+
+						/******* Go top button *******/
+
+#myBtn {
+  	display: none; 
+  	position: fixed;
+  	bottom: 20px; 
+  	right: 30px; 
+  	z-index: 99; 
+  	border: none;
+  	outline: none;
+  	background-color: rgba(6, 102, 255, 0.6);
+  	color: white; 
+  	cursor: pointer;
+  	padding: 17px; 
+  	border-radius: 12px; 
+  	font-size: 20px; 
+	transition: all 1s ease-in-out ;
+	animation: topbutton 1s ease-in-out;
+}
+
+#myBtn:hover {
+  	background-color: rgb(6, 51, 255);
+	transform: rotate(720deg);
+	transform-origin: center;
+}
+#myBtn:active
+{
+	transform: scale(1.2);
+}
+
+			/******************************************************************/
+
+
+					/*******readmore button under the page title*******/
+
+a.readmore
+{
+	  display: inline-block;
+    background: rgba(0, 0, 0, 0.786);
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 20px;
+	  font-weight: 600;
+    font-size:16px;
+	  border-radius: 100px;
+    border: 1px solid #666;
+    margin: 0.5em 0;
+	transition: all 0.3s ease-out;
+  margin-top: 20px;
+}
+a.readmore:hover	
+{
+background: rgba(0, 0, 0, 0.88);	
+	transform: scale(1.1);
+}
+
+		/******************************************************************/
+
+
+							/*******Contac Us & About*******/
+
+  #section-d
+{
+background: rgba(0, 0, 0, 0.44);
+}
+
+  #section-d .box {
+    padding: 2em;
+    color: #fff;
+  }
+
+  #section-d .box:first-child {
+    background:rgba(9, 122, 214, 0.232);
+  }
+
+
+		/**************************************************************************/
+
+
+
+						/**********	Slide Show ************/
+
+
+.slideshow-container
+{
+	width: 100%;	
+	height: 580px;
+	position: relative;
+	margin: auto;
+	overflow: hidden;
+	margin-top: 100px;
+	text-align-last: center;
+}
+.mySlides
+{
+	display:none;
+}
+.fade
+{
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+						/******** Previous and next Buttons *********/
+
+.prev, .next
+{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: 900;
+	font-size: 50px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select:none;
+}
+.next
+{
+	right: 0px;
+	border-radius: 3px 0 0 3px;
+}
+.prev
+{
+	left: 0px;
+}
+.prev:hover, .next:hover
+{
+	background-color: rgba(0.0.0.8);
+}
+
+			/****************************************************************/
+
+
+					/*****  The dots under the slide show  *****/
+
+.dot
+{
+	cursor: pointer;
+	height: 20px;
+	position: relative;
+	bottom: 10px;
+	width: 20px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.active, .dot:hover{
+	background-color: #4b4b4b;
+}
+.dots
+{
+	text-align: center;
+	position: relative;
+}
+
+			/****************************************************************/
+
+
+						/*****  The Cpation on pictures  *****/
+
+.text
+{
+	color: white;
+	font-size: 25px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+			/****************************************************************/
+
+
+							/*****  The Number of picture  *****/
+
+.numberText
+{
+	color: #f2f2f2;
+	font-size: 22px;
+	padding: 8px 12px;
+	position: absolute;
+}
+
+			/****************************************************************/
+
+
+							/*****  the pictures  *****/
+
+img
+{
+	vertical-align: middle;
+	height: 100%;
+	width: 100%;
+	position:relative;
+	bottom: 100px;
+}
+
+.eclipse
+{
+  bottom: 160px;
+}
+.moon
+{
+  bottom: 50px;
+	
+}
+
+			/****************************************************************/
+
+
+							/*****  the text on pictures  *****/
+
+.p-slideshow
+{ 
+  	background: rgba(0, 0, 0, 0.88);
+  	border-radius: 20px;
+	padding: 20px;
+}
+.header-of-sildeshow
+{
+  background: rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  margin: 20px auto;
+  width: 30%;
+  
+}
+			/******************************************************************/
+		
+	/******************************************************************************/
+
+
+					/******* the paragraph under the slide show*******/
+
+
+.readmore-information
+{
+   color: white;
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.44);
+  padding: 12px 20px;
+  font-weight: 600;
+  border: 1px solid #666;
+  margin: 0.5em 0;
+  text-align: left;
+}
+
+			/******************************************************************/
+
+
+
+								/******* Media *******/
+
+@media(min-aspect-ratio:16/9)
+{
+    .video-background
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9)
+{
+    .video-background
+    {
+        width: auto;
+        height: 100%;
+    }
+}
+  @media (min-width: 700px) {
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+
+    .box
+    {
+      grid-column: span 2;
+    }
+
+  }
+			/******************************************************************/
+
+
+							/******* Animation *******/
+
+
+@keyframes movingnav
+{
+	from
+	{
+		transform: translateX(445px);
+	}
+	to
+	{
+		transform: translateX(0);
+	}
+}
+@-webkit-keyframes movingnav
+{
+	from
+	{
+		transform: translateX(445px);
+	}
+	to
+	{
+		transform: translateX(0);
+	}
+}
+	@-webkit-keyframes fade
+{
+	from {opacity: .4};
+	to {opacity: 1};
+}
+@keyframes fade
+{
+	from {opacity: .4};
+	to {opacity: 1};
+}
+
+@keyframes contentlist
+{
+	from {
+		opacity: 0;
+		transform: translateX(220px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@-webkit-keyframes contentlist
+{
+	from {
+		opacity: 0;
+		transform: translateX(220px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes topbutton
+{
+	from
+	{
+		opacity: 0;
+	}
+	to
+	{
+		opacity: 1;
+	}
+}
+	@-webkit-keyframes topbutton
+	{
+		from
+		{
+			opacity: 0;
+		}
+		to
+		{
+			opacity: 1;
+		}
+	}
+@keyframes allContentList
+{
+	from
+	{
+		opacity: 0;
+		transform: translateY(-70px);
+	}
+	to
+	{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@-webkit-keyframes allContentList
+{
+	from
+	{
+		opacity: 0.4;
+		transform: translateY(-70px);
+	}
+	to
+	{
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+			/**********************************************************************/

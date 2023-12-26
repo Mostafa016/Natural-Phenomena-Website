@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Register</title>
+    <link href="login-register-style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+    <!-----------------background video------------->
+<section class="header" id="section-header">
+    <div class="background-video">
+         <video autoplay loop class="video-background" muted plays-inline> 
+        <source src="loop.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+    <!-----------------background video------------->
+    <form onsubmit ="return validRegistration()">
+      
+      <div class="formElements">
+        
+        <h1>Register</h1>
+
+        <label for = "firstName" id = "fNameLabel"><b>First Name</b></label> <br>
+        <input type = "text" id = "firstName" placeholder = "First Name" onblur = "validFirstName()">
+        <span id="firstNameError" class = "error" style="display: none;">The name should be between 2 to 10 characters long and have only uppercase and lowercase letters.</span>
+        <br> 
+
+        <label for = "lastName" id = "lNameLabel"><b>Last Name</b></label> <br>
+        <input type = "text" id = "lastName" placeholder = "Last Name" onblur = "validLastName()">
+        <span id="lastNameError" class = "error" style="display: none;">The name should be between 2 to 10 characters long and have only uppercase and lowercase letters.</span>
+        <br>
+        
+        <label for = "email" id = "emailLabel"><b>E-mail</b></label> <br>
+        <input type = "text" id = "email" name = "email" placeholder = "example@yahoo.com" onblur = "validEmail()">
+        <span id = "emailError" class = "error" style="display: none;">E-mail format: example@yahoo.com</span>
+        <br>
+        
+        <label for = "password" id = "passwordLabel"><b>Password</b></label><br>
+        <input type = "password" id = "password" name = "password" placeholder = "***************" onblur="validPassword()">
+        <span id = "passwordError" class = "error" style="display: none;">The password should be at least 4 characters long and have at least one: lowercase letter, uppercase letter, digit, and special character.</span>
+        <br>
+       
+        <label for = "confirmPassword" id = "confirmPasswordLabel"><b>Confirm Password</b></label><br>
+        <input type = "password" id = "confirmPassword" name = "confirmPassword" placeholder = "***************" onblur ="validConfirmPassword()">
+        <span id="confirmPasswordError" class = "error" style="display: none;">Passwords not matching.</span>
+         <br>
+         <input type="checkbox">
+         <label class="remember-agree">I agree to the terms of use</label>
+         
+          <button type="submit" class="button">Register</button>
+
+              <p>Already have an account? <br><br><a href = "login.html"><label>Login here.</a></p>
+
+        </div>
+
+
+        </form>
+
+    <script src="login-register-script.js"></script>
+
+  </body>
+
+</html>

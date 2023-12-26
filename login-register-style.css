@@ -1,0 +1,124 @@
+/*body{overflow: hidden;}*/
+.formElements {
+  display: inline-block;
+  width: 40%;
+  height: 40%;
+  text-align: center;
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.44);
+  border-radius: 6px;
+  box-shadow: 0px 10px 10px 1px rgba(128, 128, 128, 0.6);
+  color: white;
+
+}
+
+ .formElements h1{
+  font-size: 40px;
+}
+label{
+  font-size: 20px;
+}
+input[type = "text"], input[type = "password"]{
+  padding: 15px;
+  border: none;
+  border-radius: 3px; /*top right bottom left*/
+  margin: 15px 0px 15px 0px;
+  width: 90%;
+}
+body
+{
+  text-align: center;
+  margin-top: 8%;
+ /* background-image: url('image1.jpg');*/
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+.button{
+ /* background-color:green;*/
+  color: white;
+  padding: 15px;
+  border: 1px solid rgba(206, 212, 216, 0.232);
+  border-radius: 6px;
+  cursor:pointer;
+  width:95%;
+  font-size: 20px;
+  /*---------------------------------------*/
+  background:rgba(9, 122, 214, 0.232);
+  overflow: hidden;
+  margin: 20px 0px 20px 0px;
+  transition: all 0.5s ease-out;
+
+}
+.button:hover
+{
+  background: rgba(0, 0, 0, 0.153);	
+	transform: scale(1.1);
+}
+
+a
+{
+  text-decoration: none;
+  color: white;
+  background:rgba(9, 122, 214, 0.232);
+  padding: 5px;
+  border: 1px solid rgba(206, 212, 216, 0.232);
+  border-radius: 6px; 
+  outline:none;
+  transition: all 0.5s ease-out;
+  display: inline-block;
+}
+a:hover	
+{
+background: rgba(0, 0, 0, 0.153);	
+	transform: scale(1.1);
+}
+.error{
+  color: red;
+  text-align: left;
+  margin-left: 24px;
+}
+.remember-agree
+{
+  font-family: monospace;
+  font-size: 15px;
+}
+ /*-----------------background video style-------------*/
+.background-video
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+.video-background
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+@media(min-aspect-ratio:16/9)/*(متمسحش حاجة اوك لما اقبلك هفهمك)*/
+{
+    .video-background
+    {
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9)/*(متمسحش حاجة اوك لما اقبلك هفهمك)*/
+{
+    .video-background
+    {
+        width: auto;
+        height: 100%;
+    }
+}
+ /*-----------------background video style-------------*/
